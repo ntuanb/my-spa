@@ -3,8 +3,15 @@ var app = angular.module('spaApp', [
 
 	'mm.foundation',
 
-	'routes',
-	'app.controllers'
+	'app.routes',
+	'app.controllers',
+
+	'site.nav',
+
+	'store.cart',
+	'store.products',
+
+	'helper.id'
 ]).run(function() {
-	
+
 });

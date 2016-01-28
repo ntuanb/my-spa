@@ -1,3 +1,11 @@
+<section class="s bg--dark-skin">
+	<div class="row row-full">
+		<div class="columns small-12">
+			<img src="img/slide_01.jpg" class="img--100">
+		</div>
+	</div>
+</section>
+
 <section class="s bg--dark-skin pt--3rem pb--2rem">
 	<div class="row">
 		<div class="columns small-4 ta--center">
@@ -60,6 +68,16 @@
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 				</p>
 			</div>
+		</div>
+	</div>
+</section>
+
+{{ products }}
+
+<section>
+	<div class="row">
+		<div ng-repeat="product in products.slice(0, 3)" class="columns">
+			{{ product }}
 		</div>
 	</div>
 </section>
