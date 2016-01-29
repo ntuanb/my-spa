@@ -23,6 +23,8 @@
     "angular-route": "~1.4.9",
     "foundation": "~5.5.3",
     "angular-foundation": "^0.8.0",
-    "jquery": "^2.2.0"
+    "jquery": "^2.2.0",
+    "SpinKit": "spinkit#^1.2.5",
+    "animate.css": "^3.5.1"
   }
 }

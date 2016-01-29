@@ -8,20 +8,18 @@ angular.module('site.nav', [])
 	function SiteNav() {
 		var self = this;
 		this.id = $id.generate_uuid();
-		this.p = null;
-		this.c = null;
-		this.url = null;
+		this.content = null;
 	}
 
 	r.construct = function(items) {
+		console.log(items);
 		var menuItems = [];
 		angular.forEach(items, function(value, key) {
 			var item = new SiteNav();
-			item.p = value.p;
-			item.c = value.c;
-			item.url = value.url;
+			item.content = value;
 			menuItems.push(item);
 		});
+		console.log(menuItems);
 		return menuItems;
 	}
 
@@ -32,7 +30,9 @@ angular.module('site.nav', [])
 
 	function link($scope, $el, $attrs) {
 
+		console.log(CONFIG);
 		$scope.menuItems = SiteNavFactory.construct(CONFIG.MENU);
+		console.log($scope.menuItems);
 
 	}
 

@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "angular-route": "^1.4.9"
   },
   "devDependencies": {
     "gulp": "^3.9.0",

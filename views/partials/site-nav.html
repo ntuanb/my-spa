@@ -1,12 +1,12 @@
 <header class="site-nav">
 	<div class="row">
-		<a ng-repeat="item in menuItems" class="columns small-2" href="localhost/personal/chanoyu/#/{{ item.url }}">
+		<a ng-repeat="item in menuItems" class="columns small-2" href="#{{ item.content.url }}">
 			<div class="item">
 				<div class="p">
-					{{ item.p }}
+					{{ item.content.p }}
 				</div>
 				<div class="c">
-					{{ item.c }}
+					{{ item.content.c }}
 				</div>
 			</div>
 		</a>

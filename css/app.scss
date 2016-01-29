@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Muli:400,300);
 @import url(https://fonts.googleapis.com/css?family=Great+Vibes);
 
+@import '../bower_components/animate.css/animate.min';
+@import '../bower_components/SpinKit/scss/spinkit';
+
 @import '_vars';
 @import 'bg';
 @import 'img';
@@ -9,10 +12,12 @@
 @import 'site-nav';
 @import 'site-footer';
 
+@import 'spinner';
 @import 'buttons';
 @import 'lists';
 @import 'header';
 @import 'section';
 @import 'layouts';
+
 
 @import 'typography';

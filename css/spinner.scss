@@ -1,0 +1,12 @@
+.sk-folding-cube {
+	opacity: 0.6;
+	.sk-cube:before {
+		background-color: $color-brown;
+	}
+}
+
+.sk-wandering-cubes {
+	.sk-cube {
+		background-color: $color-brown;
+	}
+}

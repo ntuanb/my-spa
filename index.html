@@ -1,5 +1,7 @@
 <html>
 <head>
+	<title>Natural and Spa - Organic and Healthy products.</title>
+
 	<link href="bower_components/foundation/css/foundation.min.css" rel="stylesheet" type="text/css"></link>
 	<link href="bower_components/Swiper/dist/css/swiper.min.css" rel="stylesheet" type="text/css"></link>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -17,6 +19,12 @@
 	<script src="js/routes.js"></script>
 	<script src="js/controllers/AppController.js"></script>
 	<script src="js/controllers/HomeController.js"></script>
+	<script src="js/controllers/ContactController.js"></script>
+	<script src="js/controllers/MenuController.js"></script>
+	<script src="js/controllers/StoreController.js"></script>
+	<script src="js/controllers/GiftController.js"></script>
+	<script src="js/controllers/AboutController.js"></script>
+	<script src="js/controllers/BookController.js"></script>
 	<script src="js/components/SiteNav.js"></script>
 	<script src="js/components/Products.js"></script>
 	<script src="js/components/Cart.js"></script>
@@ -27,7 +35,12 @@
 	<div ng-include="'views/header-pre.html'"></div>
 	<div ng-include="'views/header.html'"></div>
 
-	<div id="container">
+	<div ng-if="loading === true" class="sk-wandering-cubes animated fadeIn">
+    <div class="sk-cube sk-cube1"></div>
+    <div class="sk-cube sk-cube2"></div>
+  </div>
+
+	<div ng-if="container === true" id="container" class="animated fadeIn">
 		<div ng-view></div>
 	</div>
 
