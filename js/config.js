@@ -3,6 +3,8 @@ var CONFIG = {
 	URL: '#'
 };
 
+CONFIG.TIMEOUT = 10000; // 10s
+
 CONFIG.MENU = [
 	{p: 'Book', c: 'with us', url: '/book'},
 	{p: 'Gift', c: 'surprise someone', url: '/gift'},
