@@ -1,5 +1,7 @@
 angular.module('auth', ['angularify.semantic.modal'])
-.controller('AuthController', function($rootScope, $scope) {
+.controller('AuthController', function($rootScope, $scope, $timeout, UserService) {
+
+	$rootScope.user = false;
 
 	$scope.doRegister = function() {
 		$scope.loadingRegister = true;
@@ -7,6 +9,10 @@ angular.module('auth', ['angularify.semantic.modal'])
 
 	$scope.doLogin = function() {
 		$scope.loadingLogin = true;
+		$timeout(function() {
+			$rootScope.user = UserService.login($scope.formData);
+			$scope.loadingLogin = false;
+		}, 500);
 	}
 
 })

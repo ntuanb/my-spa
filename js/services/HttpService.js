@@ -1,4 +1,4 @@
-angular.module('services.http')
+angular.module('services.http', [])
 .factory('HttpService', function() {
 	var r = {};
 
@@ -33,7 +33,7 @@ angular.module('services.http')
         var respTime = new Date().getTime() - startTime;
         if (respTime >= CONFIG.TIMEOUT) {
           deferred.reject(res);
-					
+
 					/** Fully set value to show that its timed out. */
           deferred.promise.$$state.value = 'TIMEOUT';
         }
