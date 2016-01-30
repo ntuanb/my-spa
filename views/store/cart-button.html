@@ -1,0 +1,25 @@
+<button ng-click="viewCart();" class="button button-normal button-extra-small"><i class="fa fa-shopping-basket"></i> Cart (0)</button>
+
+<modal ng-model="show_modal">
+   <i class="close icon" ng-click="closeCart()"></i>
+   <div class="header">
+     Your Cart
+   </div>
+   <div class="content">
+
+     There are no items.
+
+   </div>
+   <div class="actions">
+     <div class="two fluid ui buttons">
+       <div class="ui negative labeled icon button">
+         <i class="remove icon"></i>
+         Empty
+       </div>
+       <div class="ui positive right labeled icon button">
+         Checkout
+         <i class="checkmark icon"></i>
+       </div>
+     </div>
+   </div>
+</modal>

@@ -1,9 +1,12 @@
 .site-nav {
-	background: #ded8cd;
-	padding: 1rem 0;
+	.row {
+		background: #ded8cd;
+		padding: 1rem 0;
+	}
 
 	.item {
 		font-size: 0.875rem;
+		text-align: left;
 		.p {
 			color: $color-brown;
 			font-weight: 600;

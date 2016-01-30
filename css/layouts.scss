@@ -3,19 +3,19 @@
 
 .pt--2rem { padding-top: 2rem; }
 .pt--3rem { padding-top: 3rem; }
+.pt--4rem { padding-top: 4rem; }
+.pt--5rem { padding-top: 5rem; }
 
 .pb--2rem { padding-bottom: 2rem; }
 .pb--3rem { padding-bottom: 3rem; }
+.pb--4rem { padding-bottom: 4rem; }
+.pb--5rem { padding-bottom: 5rem; }
 
-.row {
-	&.row-full {
-		padding: 0;
-		margin: 0;
-		max-width: 100%;
-		width: 100%;
-		.columns {
-			padding: 0;
-			margin: 0;
+.full {
+	.row {
+		padding: 0 !important;
+		.column {
+			padding: 0 !important;
 		}
 	}
 }

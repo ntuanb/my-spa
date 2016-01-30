@@ -1,28 +1,32 @@
 <section class="s bg--dark-skin">
-	<div class="row row-full">
-		<div class="columns small-12">
-			<img src="img/slide_01.jpg" class="img--100">
+	<div class="ui equal width center aligned padded full grid">
+		<div class="row">
+			<div class="column">
+				<img src="img/slide_01.jpg" class="img--100">
+			</div>
 		</div>
 	</div>
 </section>
 
-<section class="s bg--dark-skin pt--3rem pb--2rem">
-	<div class="row">
-		<div class="columns small-4 ta--center">
-			<button class="button button-normal">Gift Certificate</button>
-		</div>
-		<div class="columns small-4 ta--center">
-			<button class="button button-action">Book Now</button>
-		</div>
-		<div class="columns small-4 ta--center">
-			<button class="button button-normal">Treatment Menu</button>
+<section class="s bg--dark-skin pt--3rem pb--3rem">
+	<div class="ui three column grid container">
+		<div class="row">
+			<div class="column ta--center">
+					<button class="button button-normal">Gift Certificate</button>
+			</div>
+			<div class="column ta--center">
+					<button class="button button-action">Book Now</button>
+			</div>
+			<div class="column ta--center">
+					<button class="button button-normal">Treatment Menu</button>
+			</div>
 		</div>
 	</div>
 </section>
 
-<section class="s pt--1rem pb--3rem">
-	<div class="row">
-		<div class="columns small-6">
+<section class="s pt--2rem pb--4rem">
+	<div class="ui two column grid container">
+		<div class="column">
 			<div class="s-content pt--2rem pb--2rem">
 				<h1 class="fs--2rem ta--center fw--300">Location</h1>
 				<p class="ta--center">
@@ -34,7 +38,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="columns small-6">
+		<div class="column">
 			<div class="s-content pt--2rem pb--2rem">
 				<h1 class="fs--2rem ta--center fw--300">Opening Hours</h1>
 				<p class="ta--center">
@@ -55,37 +59,43 @@
 	</div>
 </section>
 
-<section class="s bg--dark-skin">
-	<div class="row">
-		<div class="columns">
-			<div class="s-content pt--2rem pb--2rem">
-				<h1 class="fs--2rem ta--center fw--300">Customer Feedback</h1>
-				<h3 class="fs--1rem ta--center">Jennifer Smith</h3>
-				<p class="ta--center ls--0rem">
-					<i ng-repeat="star in [0, 1, 2, 3, 4]" class="fa fa-star c--gold"></i>
-				</p>
-				<p class="ta--center">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-				</p>
+<section class="s bg--dark-skin pt--3rem pb--4rem">
+	<div class="ui one column grid container">
+		<div class="row">
+			<div class="column">
+				<div class="s-content">
+					<h1 class="fs--2rem ta--center fw--300">Customer Feedback</h1>
+					<h3 class="fs--1rem ta--center">Jennifer Smith</h3>
+					<p class="ta--center ls--0rem">
+						<i ng-repeat="star in [0, 1, 2, 3, 4]" class="fa fa-star c--gold"></i>
+					</p>
+					<p class="ta--center">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<section class="s pt--2rem pb--2rem">
-	<div class="row mb--1rem">
-		<div class="columns">
-			<h1 class="fs--2rem ta--center fw--300">Shop and Products</h1>
-			<h3 class="fs--1rem ta--center">View our wide range of natural and organic products.</h3>
+<section class="s pt--3rem pb--4rem">
+	<div class="ui one column grid container">
+		<div class="row">
+			<div class="column">
+				<h1 class="fs--2rem ta--center fw--300">Shop and Products</h1>
+				<h3 class="fs--1rem ta--center">View our wide range of natural and organic products.</h3>
+			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div ng-repeat="product in products.slice(0, 3)" class="columns small-4 product-grid">
-			<div class="item">
-				<div class="thumb mb--1rem">
-					<img src="{{ product.content.thumb }}">
+	<div class="ui three column grid container">
+		<div class="row">
+			<div ng-repeat="product in products.slice(0, 3)" class="column product-grid">
+				<div class="item">
+					<div class="thumb mb--1rem">
+						<!-- <img src="{{ product.content.thumb }}"> -->
+					</div>
+					<p class="ta--center">{{ product.content.name }} ${{product.content.price }}</p>
 				</div>
-				<p class="ta--center">{{ product.content.name }} ${{product.content.price }}</p>
 			</div>
 		</div>
 	</div>

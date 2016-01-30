@@ -1,8 +1,6 @@
 var app = angular.module('spaApp', [
 	'ngRoute',
 
-	'mm.foundation',
-
 	'app.routes',
 	'app.controllers',
 

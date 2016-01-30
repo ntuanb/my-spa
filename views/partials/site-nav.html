@@ -1,14 +1,16 @@
 <header class="site-nav">
-	<div class="row">
-		<a ng-repeat="item in menuItems" class="columns small-2" href="#{{ item.content.url }}">
-			<div class="item">
-				<div class="p">
-					{{ item.content.p }}
+	<div class="ui equal width center aligned padded grid">
+		<div class="row">
+			<a ng-repeat="item in menuItems" class="column two wide" href="#{{ item.content.url }}">
+				<div class="item">
+					<div class="p">
+						{{ item.content.p }}
+					</div>
+					<div class="c">
+						{{ item.content.c }}
+					</div>
 				</div>
-				<div class="c">
-					{{ item.content.c }}
-				</div>
-			</div>
-		</a>
+			</a>
+		</div>
 	</div>
 </header>
