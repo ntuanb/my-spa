@@ -1,0 +1,41 @@
+<modal ng-model="$root.auth.showLogin" class="auth-login small">
+   <i class="close icon" ng-click="closeLogin()"></i>
+   <div class="header">
+     Login
+   </div>
+   <div class="content">
+
+		 <div class="ui form">
+		  <div class="two fields">
+		    <div class="field disabled">
+		      <label>Email</label>
+		      <input type="text" ng-model="login.email" placeholder="Email" readonly="readonly">
+		    </div>
+		    <div class="field disabled">
+		      <label>Password</label>
+		      <input type="text" ng-model="login.password" placeholder="Password" readonly="readonly">
+		    </div>
+		  </div>
+		</div>
+
+   </div>
+   <div class="actions">
+		 <div class="ui two column grid container">
+			 <div class="row">
+				 <div class="column">
+				 </div>
+				 <div class="column">
+				 	<div ng-class="{'d--none-i': loadingLogin === true}" class="ui button">
+				 		Cancel
+				 	</div>
+				 	<div ng-class="{'loading': loadingLogin === true}" ng-click="doLogin();" class="ui button-positive right labeled icon button">
+				 		Login
+				 		<i class="fa-chevron-right icon"></i>
+				 	</div>
+				 </div>
+			 </div>
+		 </div>
+
+
+   </div>
+</modal>

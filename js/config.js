@@ -5,6 +5,17 @@ var CONFIG = {
 
 CONFIG.TIMEOUT = 10000; // 10s
 
+CONFIG.REGISTER = {
+	username: 'test',
+	email: 'test@test.com',
+	password: 'test'
+};
+
+CONFIG.LOGIN = {
+	email: 'test@test.com',
+	password: 'test'
+}
+
 CONFIG.MENU = [
 	{p: 'Book', c: 'with us', url: '/book'},
 	{p: 'Gift', c: 'surprise someone', url: '/gift'},

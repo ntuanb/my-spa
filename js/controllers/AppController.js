@@ -5,7 +5,10 @@ angular.module('app.controllers', [])
 	'$rootScope', '$scope', '$location', '$timeout', 'CartFactory', 'ProductFactory', function(
 	$rootScope, $scope, $location, $timeout, CartFactory, ProductFactory
 ) {
+
 	$rootScope.CONFIG = CONFIG;
+	$rootScope.user = null; console.log($rootScope.user);
+
 	$scope.loading = true;
 	$scope.container = false;
 

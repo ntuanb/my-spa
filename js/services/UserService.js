@@ -18,7 +18,7 @@ angular.module('services.user', [])
 
 	return r;
 })
-.factory('UserService', function(AuthService) {
+.factory('UserService', function(AuthService, UserFactory) {
 	var r = {};
 
 	r.login = function(formData) {

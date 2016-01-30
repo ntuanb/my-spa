@@ -1,5 +1,9 @@
 <div class="col-sm-6 ta--right">
-	<div ng-if="!($root.user)" auth-register class="d--inline-block"></div>
-	<div ng-if="!($root.user)" auth-login class="d--inline-block"></div>
+	<div ng-if="$root.user === null" user-register class="d--inline-block"></div>
+	<div ng-if="$root.user === null" user-login class="d--inline-block"></div>
+
+	{{ $root.user }}
+
+	<div class="d--inline-block">Profile</div>
 	<div store-cart class="d--inline-block"></div>
 </div>

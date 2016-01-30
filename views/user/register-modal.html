@@ -1,0 +1,45 @@
+<modal ng-model="$root.auth.showRegister" class="auth-register small">
+   <i class="close icon" ng-click="closeRegister()"></i>
+   <div class="header">
+     Register
+   </div>
+   <div class="content">
+
+		 <div class="ui form">
+		  <div class="three fields">
+		    <div class="field disabled">
+		      <label>Username</label>
+		      <input type="text" placeholder="Username" readonly="readonly">
+		    </div>
+		    <div class="field disabled">
+		      <label>Email</label>
+		      <input type="text" placeholder="Email" readonly="readonly">
+		    </div>
+		    <div class="field disabled">
+		      <label>Password</label>
+		      <input type="text" placeholder="Password" readonly="readonly">
+		    </div>
+		  </div>
+		</div>
+
+   </div>
+   <div class="actions">
+		 <div class="ui two column grid container">
+			 <div class="row">
+				 <div class="column">
+				 </div>
+				 <div class="column">
+				 	<div ng-class="{'d--none-i': loadingRegister === true}" class="ui button">
+				 		Cancel
+				 	</div>
+				 	<div ng-class="{'loading': loadingRegister === true}" ng-click="doRegister();" class="ui button-positive right labeled icon button">
+				 		Register
+				 		<i class="fa-chevron-right icon"></i>
+				 	</div>
+				 </div>
+			 </div>
+		 </div>
+
+
+   </div>
+</modal>

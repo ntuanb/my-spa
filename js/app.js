@@ -8,7 +8,7 @@ var app = angular.module('spaApp', [
 	'services.http',
 	'services.user',
 
-	'auth',
+	'user',
 
 	'site.nav',
 
