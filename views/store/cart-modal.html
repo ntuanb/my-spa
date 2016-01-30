@@ -24,23 +24,21 @@
 
    </div>
    <div class="actions">
-		 <div class="ui two column grid container ta--left">
+		 <div class="ui two column grid container">
 			 <div class="row">
-				 <div class="column cart-total">
+				 <div class="column cart-total ta--left">
 					 <h2>
 						 Subotal: $32.12
 					 </h2>
 				 </div>
 				 <div class="column">
-					 <div class="two fluid ui buttons">
-					 	<div class="ui button">
+					 	<div ng-class="{'d--none': loadingCheckout === true}" class="ui button">
 					 		Cancel
 					 	</div>
-					 	<div class="ui positive right labeled icon button">
+					 	<div ng-class="{'loading': loadingCheckout === true}" ng-click="doCheckout();" class="ui button-positive right labeled icon button">
 					 		Checkout
 					 		<i class="fa-chevron-right icon"></i>
 					 	</div>
-					 </div>
 				 </div>
 			 </div>
 		 </div>

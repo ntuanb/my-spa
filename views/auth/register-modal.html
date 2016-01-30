@@ -24,20 +24,18 @@
 
    </div>
    <div class="actions">
-		 <div class="ui two column grid container ta--left">
+		 <div class="ui two column grid container">
 			 <div class="row">
 				 <div class="column">
 				 </div>
 				 <div class="column">
-					 <div class="two fluid ui buttons">
-					 	<div class="ui button">
-					 		Cancel
-					 	</div>
-					 	<div class="ui positive right labeled icon button">
-					 		Register
-					 		<i class="fa-chevron-right icon"></i>
-					 	</div>
-					 </div>
+				 	<div ng-class="{'d--none-i': loadingRegister === true}" class="ui button">
+				 		Cancel
+				 	</div>
+				 	<div ng-class="{'loading': loadingRegister === true}" ng-click="doRegister();" class="ui button-positive right labeled icon button">
+				 		Register
+				 		<i class="fa-chevron-right icon"></i>
+				 	</div>
 				 </div>
 			 </div>
 		 </div>

@@ -1,5 +1,13 @@
 angular.module('auth', ['angularify.semantic.modal'])
-.controller('AuthController', function($scope) {
+.controller('AuthController', function($rootScope, $scope) {
+
+	$scope.doRegister = function() {
+		$scope.loadingRegister = true;
+	}
+
+	$scope.doLogin = function() {
+		$scope.loadingLogin = true;
+	}
 
 })
 

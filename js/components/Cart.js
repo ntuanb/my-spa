@@ -20,6 +20,10 @@ angular.module('store.cart', ['angularify.semantic.modal'])
 })
 .controller('CartController', function($scope) {
 
+	$scope.doCheckout = function() {
+		$scope.loadingCheckout = true;
+	}
+
 })
 .directive('storeCart', function($rootScope, CartFactory) {
 
