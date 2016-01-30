@@ -18,21 +18,19 @@ angular.module('store.cart', ['angularify.semantic.modal'])
 	return r;
 
 })
-.directive('storeCart', function(CartFactory) {
+.controller('CartController', function($scope) {
+
+})
+.directive('storeCart', function($rootScope, CartFactory) {
 
 	function link($scope, $el, $attrs) {
 
-		console.log('doing site store cart nav');
-
-
-
 		$scope.viewCart = function() {
-			$scope.show_modal = true;
+			$rootScope.cart.showCart = true;
 		}
-    $scope.closeCart = function() {
-      $scope.show_modal = false;
-    }
-
+		$scope.closeCart = function() {
+			$rootScope.cart.showCart = false;
+		}
 
 	}
 

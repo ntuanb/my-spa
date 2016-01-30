@@ -1,0 +1,43 @@
+<modal ng-model="$root.auth.showLogin" class="auth-login small">
+   <i class="close icon" ng-click="closeLogin()"></i>
+   <div class="header">
+     Login
+   </div>
+   <div class="content">
+
+		 <div class="ui form">
+		  <div class="two fields">
+		    <div class="field">
+		      <label>Email</label>
+		      <input type="text" placeholder="Email">
+		    </div>
+		    <div class="field">
+		      <label>Password</label>
+		      <input type="text" placeholder="Password">
+		    </div>
+		  </div>
+		</div>
+
+   </div>
+   <div class="actions">
+		 <div class="ui two column grid container ta--left">
+			 <div class="row">
+				 <div class="column">
+				 </div>
+				 <div class="column">
+					 <div class="two fluid ui buttons">
+					 	<div class="ui button">
+					 		Cancel
+					 	</div>
+					 	<div class="ui positive right labeled icon button">
+					 		Login
+					 		<i class="fa-chevron-right icon"></i>
+					 	</div>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+
+
+   </div>
+</modal>

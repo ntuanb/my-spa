@@ -25,6 +25,7 @@
 	<script src="js/controllers/GiftController.js"></script>
 	<script src="js/controllers/AboutController.js"></script>
 	<script src="js/controllers/BookController.js"></script>
+	<script src="js/components/Auth.js"></script>
 	<script src="js/components/SiteNav.js"></script>
 	<script src="js/components/Products.js"></script>
 	<script src="js/components/Cart.js"></script>
@@ -32,7 +33,7 @@
 </head>
 <body ng-app="spaApp" ng-controller="AppController">
 
-	<div ng-include="'views/header-pre.html'"></div>
+	<div ng-include="'views/title.html'"></div>
 	<div ng-include="'views/header.html'"></div>
 
 	<div ng-if="loading === true" class="sk-wandering-cubes animated fadeIn">
@@ -45,6 +46,7 @@
 	</div>
 
 	<div ng-include="'views/footer.html'"></div>
+	<div ng-include="'views/globals.html'"></div>
 
 </body>
 </html>

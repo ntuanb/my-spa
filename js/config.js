@@ -4,7 +4,7 @@ var CONFIG = {
 };
 
 CONFIG.MENU = [
-	{p: 'Book Now', c: 'with us', url: '/book'},
+	{p: 'Book', c: 'with us', url: '/book'},
 	{p: 'Gift', c: 'surprise someone', url: '/gift'},
 	{p: 'Menu', c: 'our services', url: '/menu'},
 	{p: 'About', c: 'the beginning', url: '/about'},

@@ -1,12 +1,50 @@
-<div>
-	<h3>I'm a modal!</h3>
-	<ul>
-	  <li ng-repeat="item in items">
-	    <a ng-click="selected.item = item">{{ item }}</a>
-	  </li>
-	</ul>
-	<p>Selected: <b>{{ selected.item }}</b></p>
-	<button class="button secondary" ng-click="reposition()">Reset top position</button>
-	<button class="button" ng-click="ok()">OK</button>
-	<a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
-</div>
+<modal ng-model="$root.cart.showCart" class="cart-checkout small">
+   <i class="close icon" ng-click="closeCart()"></i>
+   <div class="header">
+     Your Cart
+   </div>
+   <div class="content">
+
+     <div class="cart-products">
+			 <div class="ui grid container item">
+				 <div class="two wide column">
+					 thumb
+				 </div>
+				 <div class="ten wide column">
+					 text
+				 </div>
+				 <div class="three wide column">
+					 amount
+				 </div>
+				 <div class="one wide column">
+					 x
+				 </div>
+			 </div>
+		 </div>
+
+   </div>
+   <div class="actions">
+		 <div class="ui two column grid container ta--left">
+			 <div class="row">
+				 <div class="column cart-total">
+					 <h2>
+						 Subotal: $32.12
+					 </h2>
+				 </div>
+				 <div class="column">
+					 <div class="two fluid ui buttons">
+					 	<div class="ui button">
+					 		Cancel
+					 	</div>
+					 	<div class="ui positive right labeled icon button">
+					 		Checkout
+					 		<i class="fa-chevron-right icon"></i>
+					 	</div>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+
+
+   </div>
+</modal>
