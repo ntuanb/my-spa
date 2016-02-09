@@ -7,8 +7,9 @@
 				</a>
 			</div>
 			<div class="column ta--right">
-				<div auth-register class="d--inline-block"></div>
-				<div auth-login class="d--inline-block"></div>
+				<div ng-if="$root.user === null" user-register class="d--inline-block"></div>
+				<div ng-if="$root.user === null" user-login class="d--inline-block"></div>
+				<div ng-if="$root.user !== null" user-profile class="d--inline-block"></div>
 				<div store-cart class="d--inline-block"></div>
 			</div>
 		</div>

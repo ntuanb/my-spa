@@ -10,6 +10,7 @@ function PagesFactory($id) {
 
 	r.createPage = createPage;
 	r.addPage = addPage;
+	r.construct = construct;
 
 	return r;
 

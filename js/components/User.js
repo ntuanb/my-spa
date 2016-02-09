@@ -64,4 +64,21 @@ angular.module('user', ['angularify.semantic.modal'])
 		templateUrl: 'views/user/login-button.html',
 		link: link
 	}
+})
+
+
+.directive('userProfile', function() {
+
+	var r = {};
+
+	r.link = link;
+	r.restrict = 'AE';
+	r.templateUrl = 'views/user/profile-button.html';
+
+	return r;
+
+	function link($scope, $el, $attrs) {
+
+	}
+
 });
