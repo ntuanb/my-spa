@@ -16,6 +16,16 @@ CONFIG.LOGIN = {
 	password: 'test'
 }
 
+CONFIG.PAGES = [
+	{name: 'Home'},
+	{name: 'Book'},
+	{name: 'Contact'},
+	{name: 'Gift'},
+	{name: 'About'},
+	{name: 'Store'},
+	{name: 'Menu'}
+]
+
 CONFIG.MENU = [
 	{p: 'Book', c: 'with us', url: '/book'},
 	{p: 'Gift', c: 'surprise someone', url: '/gift'},

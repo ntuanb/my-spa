@@ -11,6 +11,7 @@ var app = angular.module('spaApp', [
 	'user',
 
 	'site.nav',
+	'site.pages',
 
 	'store.cart',
 	'store.products',

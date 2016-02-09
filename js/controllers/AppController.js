@@ -1,9 +1,10 @@
 "use strict";
 
-angular.module('app.controllers', [])
-.controller('AppController', [
-	'$rootScope', '$scope', '$location', '$timeout', 'CartFactory', 'ProductFactory', function(
-	$rootScope, $scope, $location, $timeout, CartFactory, ProductFactory
+var m = angular.module('app.controllers', []);
+m.controller('AppController', AppController);
+
+function AppController(
+	$rootScope, $scope, $location, $timeout, CartFactory, ProductFactory, PageFactory
 ) {
 
 	$rootScope.CONFIG = CONFIG;
@@ -36,5 +37,5 @@ angular.module('app.controllers', [])
 
 	$scope.cart = CartFactory.init();
 	$scope.products = ProductFactory.construct(CONFIG.PRODUCTS);
-	console.log($scope.products);
-}]);
+	$scope.pages = PageFactory.construct(CONFIG.PAGES);
+}
