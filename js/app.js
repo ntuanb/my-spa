@@ -4,6 +4,7 @@ var app = angular.module('spaApp', [
 	'app.routes',
 	'app.controllers',
 
+	'services.storage',
 	'services.auth',
 	'services.http',
 	'services.user',

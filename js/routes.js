@@ -79,5 +79,15 @@ angular.module('app.routes', ['ngRoute'])
 			templateUrl: 'views/pages/contact.html',
 			controller: 'ContactController'
 		})
+
+    // DASHBAORD
+		.when('/dashboard/client', {
+			templateUrl: 'views/dashboard/client.html',
+			controller: 'DashboardClientController'
+		})
+		.when('/dashboard/admin', {
+			templateUrl: 'views/dashboard/admin.html',
+			controller: 'DashboardAdminController'
+		})
 	;
 });

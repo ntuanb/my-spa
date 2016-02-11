@@ -1,3 +1,18 @@
+.force-button {
+  width: auto;
+  font-size: 0.75rem;
+  padding: 0.5rem 1.5rem 0.4rem;
+  margin-left: 0.5rem;
+  box-shadow: 0px 1px 3px -1px #ddd;
+  color: #998f7c;
+  background: #ede5d5;
+  background-image: linear-gradient(to bottom, #ede5d5, #ddd3bf);
+  .text {
+    font-weight: 100;
+    margin-right: 0.25rem;
+  }
+}
+
 .button {
   &.button-positive {
     background-color: #21ba45!important;
@@ -47,7 +62,7 @@
 	 &.button-extra-small {
     width: auto;
     font-size: 0.75rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.5rem 0.4rem;
     margin-left: 0.5rem;
     box-shadow: 0px 1px 3px -1px #ddd;
 		 i {

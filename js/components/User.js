@@ -79,6 +79,8 @@ angular.module('user', ['angularify.semantic.modal'])
 
 	function link($scope, $el, $attrs) {
 
+		$el.find('#userDropdown').dropdown({action: 'hide'});
+
 	}
 
 });

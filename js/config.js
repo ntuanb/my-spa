@@ -17,13 +17,16 @@ CONFIG.LOGIN = {
 }
 
 CONFIG.PAGES = [
-	{name: 'Home'},
-	{name: 'Book'},
-	{name: 'Contact'},
-	{name: 'Gift'},
-	{name: 'About'},
-	{name: 'Store'},
-	{name: 'Menu'}
+	{name: 'Home', url: '/'},
+	{name: 'Book', url: '/book'},
+	{name: 'Contact', url: '/contact'},
+	{name: 'Gift', url: '/gift'},
+	{name: 'About', url: '/about'},
+	{name: 'Store', url: '/store'},
+	{name: 'Menu', url: '/menu'},
+	{name: 'Dashboard', url: '/dashboard'},
+	{name: 'Dashboard Client', url: '/dashboard/client'},
+	{name: 'Dashboard Admin', url: '/dashboard/admin'}
 ]
 
 CONFIG.MENU = [

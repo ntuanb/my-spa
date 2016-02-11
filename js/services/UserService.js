@@ -12,22 +12,36 @@ angular.module('services.user', [])
 
 	var r = {};
 
-	r.new = function() {
+	r.newUser = newUser;
+
+	return r;
+
+	function newUser() {
 		return new User();
 	}
 
-	return r;
+
 })
-.factory('UserService', function(AuthService, UserFactory) {
+.factory('UserService', function(AuthService, StorageService, UserFactory) {
 	var r = {};
 
-	r.login = function(formData) {
+	r.login = login;
+	r.save = save;
+
+	return r;
+
+	function save(data) {
+		StorageService.set(data.content.type, data);
+	}
+
+	function login(formData) {
 		var a = AuthService.authenticate(formData);
 
 		// if succes do user details
 		var userRes = {
 			data: {
 				id: 'random',
+				type: 'users',
 				attributes: {
 					firstname: 'John',
 					lastname: 'Smith',
@@ -35,13 +49,13 @@ angular.module('services.user', [])
 				}
 			}
 		};
-		var u = UserFactory.new();
+		var u = UserFactory.newUser();
 		u.authenticated = true;
 		u.token = a;
 		u.content = userRes.data;
 
+		r.save(u);
+
 		return u;
 	}
-
-	return r;
 });
