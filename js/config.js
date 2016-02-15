@@ -38,6 +38,25 @@ CONFIG.MENU = [
 	{p: 'Store', c: 'our products', url: '/store'}
 ];
 
+CONFIG.MENU_CLIENT = [
+	{name: 'My Bookings', url: '/dashboard/client/bookings'},
+	{name: 'My Wishlist', url: '/dashboard/client/wishlist'},
+	{name: 'Gifts Sent', url: '/dashboard/client/gifts'},
+	{name: 'Support Tickets', url: '/dashboard/client/support'},
+	{name: 'Purchase History', url: '/dashboard/client/history'},
+	{name: 'My Settings', url: '/dashboard/client/settings'}
+];
+
+CONFIG.MENU_ADMIN = [
+	{name: 'Calendar', url: '/dashboard/admin/calendar'},
+	{name: 'Bookings', url: '/dashboard/client/wishlist'},
+	{name: 'Purchases', url: '/dashboard/client/gifts'},
+	{name: 'Reports', url: '/dashboard/client/history'},
+	{name: 'Site Management', url: '/dashboard/client/history'},
+	{name: 'Support', url: '/dashboard/client/support'},
+	{name: 'Settings', url: '/dashboard/client/settings'}
+];
+
 CONFIG.PRODUCTS = [
 	{name: 'Moisturizer', description: 'This is a description.', price: 19.00, thumb: 'img/prod_01.jpg', preview: true},
 	{name: 'Facial', description: 'This is a description.', price: 15.00, thumb: 'img/prod_02.jpg', preview: true},

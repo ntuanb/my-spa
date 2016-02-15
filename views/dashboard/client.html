@@ -1,1 +1,40 @@
-client
+<header class="client-nav">
+	<div class="ui sixteen container grid mtb--0-i">
+		<div class="row">
+			<a class="column two wide" href="#">
+				<div class="item">
+					<div class="p">
+						My Menu
+					</div>
+				</div>
+			</a>
+			<a ng-repeat="item in clientMenuItems" class="column two wide" href="#{{ item.url }}">
+				<div class="item">
+					<div class="p">
+						{{ item.name }}
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</header>
+
+<main>
+	<div class="ui grid container">
+
+		<div class="row">
+			<div class="column sixteen wide">
+				<div class="ui breadcrumb">
+				  <a class="section">Dashboard</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="column sixteen wide">
+				<h1>Dashboard</h1>
+			</div>
+		</div>
+
+	</div>
+</main>

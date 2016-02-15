@@ -3,5 +3,8 @@
 angular.module('app.controllers')
 .controller('DashboardAdminController', DashboardAdminController);
 
-function DashboardAdminController() {
+function DashboardAdminController($scope, UserService) {
+
+	$scope.adminMenuItems = UserService.getMenu('admin');
+
 }

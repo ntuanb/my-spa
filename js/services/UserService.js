@@ -27,10 +27,12 @@ angular.module('services.user', [])
 
 	r.login = login;
 	r.save = save;
+	r.getMenu = getMenu;
 
 	return r;
 
 	function save(data) {
+		console.log(data);
 		StorageService.set(data.content.type, data);
 	}
 
@@ -58,4 +60,17 @@ angular.module('services.user', [])
 
 		return u;
 	}
+
+	function getMenu(role) {
+		var menuItems;
+
+		if (role === 'admin') {
+			menuItems = CONFIG.MENU_ADMIN;
+		} else {
+			menuItems = CONFIG.MENU_CLIENT;
+		}
+
+		return menuItems
+	}
+
 });

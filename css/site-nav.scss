@@ -1,6 +1,6 @@
 .site-nav {
+	background: #ded8cd;
 	.row {
-		background: #ded8cd;
 		padding: 1rem 0;
 	}
 
@@ -13,6 +13,44 @@
 		}
 		.c {
 			color: $color-brown;
+		}
+	}
+}
+
+.client-nav {
+	background: #AB9B92;
+	.row {
+		padding: 1rem 0;
+	}
+
+	.item {
+		font-size: 0.875rem;
+		text-align: left;
+		.p {
+			color: #fff;
+			font-weight: 600;
+		}
+		.c {
+			color: #fff;
+		}
+	}
+}
+
+.admin-nav {
+	background: #AB9B92;
+	.row {
+		padding: 1rem 0;
+	}
+
+	.item {
+		font-size: 0.875rem;
+		text-align: left;
+		.p {
+			color: #fff;
+			font-weight: 600;
+		}
+		.c {
+			color: #fff;
 		}
 	}
 }

@@ -8,8 +8,7 @@
 */
 angular.module('services.storage', [])
 .factory('StorageService', function(
-  $window,
-  $ionicHistory
+  $window
 ) {
 
   //////////////////////////////////////
@@ -48,8 +47,6 @@ angular.module('services.storage', [])
   }
   function clearAll() {
     $window.localStorage.clear();
-    $ionicHistory.clearCache();
-    $ionicHistory.clearHistory();
     return true;
   }
 
